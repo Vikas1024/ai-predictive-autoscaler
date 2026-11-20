@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+*.log
+.pytest_cache/
+.ipynb_checkpoints/
+models/*.pkl
+models/*.h5
+datasets/raw/*
+!datasets/raw/.gitkeep
