@@ -1,0 +1,15 @@
+{
+  "trial_id": "constant_16_users",
+  "profile": "constant",
+  "max_users": 16,
+  "duration_seconds": 240,
+  "collector_interval_seconds": 5,
+  "prediction_horizon_seconds": 30,
+  "controller": "Kubernetes HPA",
+  "application_url": "http://192.168.49.2:30080",
+  "prometheus_url": "http://192.168.49.2:30090",
+  "started_at_utc": "2026-11-21T10:44:51.983763+00:00",
+  "status": "failed",
+  "ended_at_utc": "2026-11-21T10:48:58.181819+00:00",
+  "error": "Locust exited with code 1. Inspect /home/user/Downloads/vikas_workspace/ai-predictive-autoscaler/experiments/results/hpa_training/batch_20261121_155504/constant_16_users/locust.log"
+}

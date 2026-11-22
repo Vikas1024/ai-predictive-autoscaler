@@ -1,0 +1,10 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+scrape_configs:
+  - job_name: predictive-autoscaler
+    metrics_path: /metrics
+    static_configs:
+      - targets:
+          - predictive-autoscaler-service.default.svc.cluster.local:5000

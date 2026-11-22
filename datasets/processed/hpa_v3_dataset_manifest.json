@@ -1,0 +1,59 @@
+{
+  "dataset_version": "v3",
+  "application_image": "predictive-autoscaler-app:v3",
+  "gunicorn_workers": 2,
+  "gunicorn_threads": 4,
+  "prediction_horizon_seconds": 30,
+  "expected_trials": 13,
+  "accepted_trials": [
+    "burst_08_users",
+    "burst_12_users",
+    "burst_16_users",
+    "constant_16_users_retry_01",
+    "ramp_down_08_users",
+    "ramp_down_12_users",
+    "ramp_down_16_users",
+    "ramp_up_08_users",
+    "ramp_up_12_users",
+    "ramp_up_16_users",
+    "spike_08_users",
+    "spike_12_users",
+    "spike_16_users"
+  ],
+  "rejected_trials": [
+    {
+      "trial_id": "constant_08_users",
+      "reason": "Not a confirmed v3 image"
+    },
+    {
+      "trial_id": "constant_12_users",
+      "reason": "Not a confirmed v3 image"
+    },
+    {
+      "trial_id": "constant_16_users",
+      "reason": "Experiment status is not completed"
+    }
+  ],
+  "total_rows": 533,
+  "feature_count": 16,
+  "train_rows": 369,
+  "test_rows": 164,
+  "train_trials": [
+    "burst_12_users",
+    "burst_16_users",
+    "constant_16_users_retry_01",
+    "ramp_down_12_users",
+    "ramp_down_16_users",
+    "ramp_up_08_users",
+    "ramp_up_12_users",
+    "spike_08_users",
+    "spike_16_users"
+  ],
+  "test_trials": [
+    "burst_08_users",
+    "ramp_down_08_users",
+    "ramp_up_16_users",
+    "spike_12_users"
+  ],
+  "random_state": 42
+}

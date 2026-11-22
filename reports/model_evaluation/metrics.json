@@ -1,0 +1,50 @@
+{
+  "model": "RandomForestRegressor",
+  "model_parameters": {
+    "n_estimators": 300,
+    "max_depth": null,
+    "min_samples_leaf": 2,
+    "max_features": 1.0,
+    "random_state": 42
+  },
+  "prediction_horizon_seconds": 30,
+  "training_rows": 369,
+  "testing_rows": 164,
+  "training_trials": [
+    "burst_12_users",
+    "burst_16_users",
+    "constant_16_users_retry_01",
+    "ramp_down_12_users",
+    "ramp_down_16_users",
+    "ramp_up_08_users",
+    "ramp_up_12_users",
+    "spike_08_users",
+    "spike_16_users"
+  ],
+  "testing_trials": [
+    "burst_08_users",
+    "ramp_down_08_users",
+    "ramp_up_16_users",
+    "spike_12_users"
+  ],
+  "feature_count": 16,
+  "cross_validation": {
+    "mae_mean": 92.7897844496064,
+    "mae_std": 22.32424514130215,
+    "rmse_mean": 120.42853990735348,
+    "rmse_std": 30.939535804349823,
+    "r2_mean": 0.31130664360931526,
+    "r2_std": 0.37684819270617886
+  },
+  "test_metrics": {
+    "mae": 84.32969313782422,
+    "rmse": 109.82098704171987,
+    "r2": 0.5863042462273009
+  },
+  "baseline_metrics": {
+    "mae": 153.80167228501548,
+    "rmse": 179.85840826942953,
+    "r2": -0.1096138505275781
+  },
+  "mae_improvement_over_baseline_percent": 45.16984641002485
+}

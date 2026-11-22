@@ -9,3 +9,20 @@ models/*.pkl
 models/*.h5
 datasets/raw/*
 !datasets/raw/.gitkeep
+
+# Trained model artifacts
+models/*.joblib
+
+# Generated experiment logs and verbose Locust output
+experiments/results/**/locust.log
+experiments/results/**/locust_exceptions.csv
+experiments/results/**/locust_failures.csv
+experiments/results/**/locust_stats_history.csv
+
+# Local experiment backups
+experiments/*.backup_*
+
+# Locust generated output
+**/*_exceptions.csv
+**/*_failures.csv
+**/*_stats_history.csv

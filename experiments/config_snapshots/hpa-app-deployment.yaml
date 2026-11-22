@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: predictive-autoscaler-app
+  labels:
+    app: predictive-autoscaler-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: predictive-autoscaler-app
+  template:
+    metadata:
+      labels:
+        app: predictive-autoscaler-app
+    spec:
+      containers:
+        - name: application
+          image: predictive-autoscaler-app:v2
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5000
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 500m
+              memory: 256Mi
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 5000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 5000
+            initialDelaySeconds: 10
+            periodSeconds: 15

@@ -1,0 +1,7 @@
+timestamp_utc,elapsed_seconds,app_cpu_millicores,app_memory_mib,desired_replicas,ready_replicas,available_replicas,work_rps,work_avg_latency_ms,work_p95_latency_ms,collection_status,error
+2026-11-20T13:34:53.944213+00:00,0.0,2.0,37.0,1,1,1,,,,success,
+2026-11-20T13:34:58.944217+00:00,5.0,2.0,37.0,1,1,1,,,,success,
+2026-11-20T13:35:03.944188+00:00,10.0,2.0,37.0,1,1,1,,,,success,
+2026-11-20T13:35:08.944180+00:00,15.0,2.0,37.0,1,1,1,,,,success,
+2026-11-20T13:35:13.944179+00:00,20.0,2.0,37.0,1,1,1,,,,success,
+2026-11-20T13:35:18.944193+00:00,25.0,2.0,37.0,1,1,1,,,,success,

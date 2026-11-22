@@ -1,0 +1,16 @@
+{
+  "trial_id": "constant_12_users",
+  "profile": "constant",
+  "max_users": 12,
+  "duration_seconds": 240,
+  "collector_interval_seconds": 5,
+  "prediction_horizon_seconds": 30,
+  "controller": "Kubernetes HPA",
+  "application_url": "http://192.168.49.2:30080",
+  "prometheus_url": "http://192.168.49.2:30090",
+  "started_at_utc": "2026-11-21T10:35:03.527902+00:00",
+  "status": "completed",
+  "ended_at_utc": "2026-11-21T10:39:13.665435+00:00",
+  "metrics_samples": 50,
+  "successful_metrics_samples": 50
+}

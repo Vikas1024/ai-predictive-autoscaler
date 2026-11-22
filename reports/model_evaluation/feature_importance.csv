@@ -1,0 +1,17 @@
+feature,importance
+app_cpu_millicores,0.47119584620686644
+work_avg_latency_ms,0.2547376525643243
+work_p95_latency_ms,0.06736155623776174
+rps_lag_3,0.04264240915920754
+work_rps,0.03806661507379659
+rps_lag_1,0.03293411416556353
+cpu_lag_3,0.03012427144374308
+rps_lag_2,0.027489739044147827
+ready_replicas,0.0114353570608312
+app_memory_mib,0.010145765092446142
+cpu_lag_2,0.007441293789643497
+cpu_lag_1,0.006425380161668167
+work_p95_latency_ms_missing,0.0
+work_avg_latency_ms_missing,0.0
+work_rps_missing,0.0
+workload_active,0.0
