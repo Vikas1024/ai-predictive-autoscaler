@@ -1,0 +1,222 @@
+{
+  "audit_name": "v4_experiment_artifact_inventory",
+  "generated_at_utc": "2026-11-23T14:04:29.549236+00:00",
+  "file_count": 43,
+  "files": [
+    {
+      "file": "datasets/processed/multi_horizon_v4/cpu_prediction_15s_all.csv",
+      "size_bytes": 108671,
+      "sha256": "813f7890c758e0dbbe388054fd2a2a4b94634494213e55da0a7a928a71dfbb8d"
+    },
+    {
+      "file": "datasets/processed/multi_horizon_v4/cpu_prediction_15s_test.csv",
+      "size_bytes": 27023,
+      "sha256": "b3c0b59b14b50427ae9f840af9a0cb44485426ef550ec2c774d02c31b5bc48ee"
+    },
+    {
+      "file": "datasets/processed/multi_horizon_v4/cpu_prediction_15s_train.csv",
+      "size_bytes": 81880,
+      "sha256": "b170aa8d97cfe185ddee07d2e39ec2658a536d407eb3e0f70cbde28b87973c42"
+    },
+    {
+      "file": "datasets/processed/multi_horizon_v4/cpu_prediction_30s_all.csv",
+      "size_bytes": 102620,
+      "sha256": "877e0613432433797e3f4504c11c05b956bd59bcfb1a085e75a10f25d282342c"
+    },
+    {
+      "file": "datasets/processed/multi_horizon_v4/cpu_prediction_30s_test.csv",
+      "size_bytes": 25694,
+      "sha256": "faa629a568727024e71c2e1344204b74c5ff6a6d6116224b1075c0aac933ba87"
+    },
+    {
+      "file": "datasets/processed/multi_horizon_v4/cpu_prediction_30s_train.csv",
+      "size_bytes": 77158,
+      "sha256": "26e8a6a7230600a775a00321cffb925b0fbb8cbad115e51147ac627f734b3351"
+    },
+    {
+      "file": "datasets/processed/multi_horizon_v4/cpu_prediction_45s_all.csv",
+      "size_bytes": 96488,
+      "sha256": "bfd2547efb0954d3922d0a1cc8d27628f93412de911c5ef2c0cd561ac9268081"
+    },
+    {
+      "file": "datasets/processed/multi_horizon_v4/cpu_prediction_45s_test.csv",
+      "size_bytes": 24694,
+      "sha256": "d1286a36b1f92607cd6b0f06541ae1068332e642619bf9ce73cdb3cb6fcd3afd"
+    },
+    {
+      "file": "datasets/processed/multi_horizon_v4/cpu_prediction_45s_train.csv",
+      "size_bytes": 72026,
+      "sha256": "99f5bfbb267f94e3c52dc335eb2405141753990e698683e4ff12115813488739"
+    },
+    {
+      "file": "datasets/processed/multi_horizon_v4/cpu_prediction_60s_all.csv",
+      "size_bytes": 90147,
+      "sha256": "47e741beef8c67a8f6b4104e985828ec1fd82ebd772f5e88c04acd1808aab863"
+    },
+    {
+      "file": "datasets/processed/multi_horizon_v4/cpu_prediction_60s_test.csv",
+      "size_bytes": 23476,
+      "sha256": "24901c864112eb06f75a53db422705e00dbb478748313ec8e88419966f571746"
+    },
+    {
+      "file": "datasets/processed/multi_horizon_v4/cpu_prediction_60s_train.csv",
+      "size_bytes": 66903,
+      "sha256": "1cd767da88c57ea00d32bb06f4dbe4212f4ab4110ef821cfc3c9392de1a73987"
+    },
+    {
+      "file": "datasets/processed/multi_horizon_v4/horizon_sample_audit.csv",
+      "size_bytes": 7516,
+      "sha256": "1620c2a0a8484bb601449af6eed8b6b035cd703f5fad1029d0146ec4dfcf2f70"
+    },
+    {
+      "file": "datasets/processed/multi_horizon_v4/multi_horizon_v4_manifest.json",
+      "size_bytes": 6136,
+      "sha256": "bf1d24ee753d1b149fe5edad094fafd288e18a14c0064840ee4330a069dd2f67"
+    },
+    {
+      "file": "datasets/processed/multi_horizon_v4/trial_metadata.csv",
+      "size_bytes": 2778,
+      "sha256": "137e83118d112b6d922420b0f3782c09e8d1754d9112ab1333ef4cf509f485b6"
+    },
+    {
+      "file": "datasets/processed/multi_horizon_v4/trial_quality.csv",
+      "size_bytes": 1917,
+      "sha256": "1c900126092d4bfdc95e37d5cb770c79b711c94d6df80745b550a33364f21eb9"
+    },
+    {
+      "file": "models/multi_horizon/v4_run_001/extratrees_15s.joblib",
+      "size_bytes": 5806577,
+      "sha256": "665bdba7be7e76997f703d2847bd79afbb99a2672db90897796931b8b2c6d8d5"
+    },
+    {
+      "file": "models/multi_horizon/v4_run_001/extratrees_30s.joblib",
+      "size_bytes": 5960081,
+      "sha256": "11281ecb0ea321aafd383ad2e0afdba8a91e0bc8dcc1db1cdd81c89b38acfdca"
+    },
+    {
+      "file": "models/multi_horizon/v4_run_001/extratrees_45s.joblib",
+      "size_bytes": 4866977,
+      "sha256": "0b5d8c47abb0a5d8f2f0b75c991414781d8433126037d96644721372ad9b1097"
+    },
+    {
+      "file": "models/multi_horizon/v4_run_001/extratrees_60s.joblib",
+      "size_bytes": 4134017,
+      "sha256": "9cb220c5f8439a98a23ca8244a1fef3d5e821508698e9b2f59cb38fcd1a370a4"
+    },
+    {
+      "file": "models/multi_horizon/v4_run_001/randomforest_15s.joblib",
+      "size_bytes": 3827729,
+      "sha256": "0006f00fdd86c71197c4d44a7bf0e548fbc8d9fa25f8456857d6ef12fb30c71b"
+    },
+    {
+      "file": "models/multi_horizon/v4_run_001/randomforest_30s.joblib",
+      "size_bytes": 3780641,
+      "sha256": "4b0d192fa382c6e396362583f5314c42c9e9733442fae1d9f200da95d12416e2"
+    },
+    {
+      "file": "models/multi_horizon/v4_run_001/randomforest_45s.joblib",
+      "size_bytes": 3238337,
+      "sha256": "f4480270615903de43c3d816bcbf2995c12471a04098d24a56f34bddf95a6f23"
+    },
+    {
+      "file": "models/multi_horizon/v4_run_001/randomforest_60s.joblib",
+      "size_bytes": 2882945,
+      "sha256": "3132b332e0a9a64339e9dda06ee72f1e999fe3c60f5176a5327b92155877dfa0"
+    },
+    {
+      "file": "reports/multi_horizon/v4_run_001/advisory_replay_60s_test.csv",
+      "size_bytes": 28993,
+      "sha256": "d22bef2b491372f0b539fd5cce75d9d682c26ef79485340dcba4989b1e0cbeee"
+    },
+    {
+      "file": "reports/multi_horizon/v4_run_001/advisory_replay_heldout.csv",
+      "size_bytes": 31739,
+      "sha256": "5d486bba21bba14fb3420bb286b813ebf1a9e9fa5c45643f5f411a5841ff63f2"
+    },
+    {
+      "file": "reports/multi_horizon/v4_run_001/cross_validation_metrics.csv",
+      "size_bytes": 1325,
+      "sha256": "759028cd59a98f7168570c2b48608d3ec845ce25d08ceb264ce8fd58a594ab17"
+    },
+    {
+      "file": "reports/multi_horizon/v4_run_001/evaluation_summary.json",
+      "size_bytes": 22602,
+      "sha256": "81e847fa42ec4eaaf3f56be459f0fbe471893a014570baf2226ff5a2f7cff9f3"
+    },
+    {
+      "file": "reports/multi_horizon/v4_run_001/heldout_metrics.csv",
+      "size_bytes": 1002,
+      "sha256": "403a2d60fcee6336218a37f97d0f0da2874a1f9d1fc72c9c6de58b455aef1d33"
+    },
+    {
+      "file": "reports/multi_horizon/v4_run_001/per_trial_metrics.csv",
+      "size_bytes": 4854,
+      "sha256": "ed2af7f26fe5d79518fe4aa70b2369dd689330839479978a3e7bab83be9ec752"
+    },
+    {
+      "file": "reports/multi_horizon/v4_run_001/predictions_15s.csv",
+      "size_bytes": 19011,
+      "sha256": "aa290b08f8267f7689c93d10892cc876fb634fcd0787d8e1a7b55fb18d0aafbe"
+    },
+    {
+      "file": "reports/multi_horizon/v4_run_001/predictions_30s.csv",
+      "size_bytes": 18111,
+      "sha256": "d08b6f779842794ef1cb15556afd09e13b8a822692ee0fb0e3bf0c2b4ccf21cf"
+    },
+    {
+      "file": "reports/multi_horizon/v4_run_001/predictions_45s.csv",
+      "size_bytes": 17449,
+      "sha256": "f6f2da729623f47a4ba6057bbd159b8b85dab06e7606d6a94d9c2a5a6702e89e"
+    },
+    {
+      "file": "reports/multi_horizon/v4_run_001/predictions_60s.csv",
+      "size_bytes": 16623,
+      "sha256": "3bf0e52e5089119c3ff9c4a4b651f61d316356dafcae195ec2da6f376a6d465a"
+    },
+    {
+      "file": "ml-engine/build_multi_horizon_datasets_v4.py",
+      "size_bytes": 13436,
+      "sha256": "481b9b07200c7e1865fe3b25ab7d126725781ac13738daca38a000df45fc0de3"
+    },
+    {
+      "file": "ml-engine/evaluate_multi_horizon_v4.py",
+      "size_bytes": 11905,
+      "sha256": "1e04ca28fb8c82b6c25b2be5ed0fdacc4653c8974deb66d4f3a7d7de11630711"
+    },
+    {
+      "file": "ml-engine/predictive_scaling_advisor.py",
+      "size_bytes": 6928,
+      "sha256": "ca74f836097cf195e7669bd05e6382f3b36bdd7ddfcdf383dd2c1ee27cfad740"
+    },
+    {
+      "file": "application/Dockerfile",
+      "size_bytes": 302,
+      "sha256": "b5abe6fc04dde71afda075c6ef2dccef7918a10a689dae6e33d7c7f79e7a9a36"
+    },
+    {
+      "file": "application/app.py",
+      "size_bytes": 2377,
+      "sha256": "24912bec52cae687c79fe7ac1a4bdd087b45b288d44ce9cf6643c05914be0297"
+    },
+    {
+      "file": "application/entrypoint.sh",
+      "size_bytes": 433,
+      "sha256": "22280e99a725a841c5b821730a204d40347358cc8d9fc804c11ce0b9a81c1ffb"
+    },
+    {
+      "file": "application/gunicorn.conf.py",
+      "size_bytes": 124,
+      "sha256": "6ec317dd61711997e2cc15c2c7045439c3a41409b96ed8b5b1b75a6f3daa21e6"
+    },
+    {
+      "file": "kubernetes/app-deployment.yaml",
+      "size_bytes": 1098,
+      "sha256": "349c1cf382b9ea63cdbb13a6370ffd94efc0144118530389e774a51c5a160f1f"
+    },
+    {
+      "file": "kubernetes/app-hpa.yaml",
+      "size_bytes": 664,
+      "sha256": "77ace33a52542771f25af63bb6930bb556cc3a8e16e5f9ef9cca84405569af60"
+    }
+  ]
+}

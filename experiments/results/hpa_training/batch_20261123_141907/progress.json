@@ -1,0 +1,70 @@
+{
+  "updated_at_utc": "2026-11-23T11:46:00.673299+00:00",
+  "requested_trials": 15,
+  "completed_trials": 15,
+  "failed_trials": 0,
+  "pending_trials": 0,
+  "active_trial": null,
+  "trials": [
+    {
+      "trial_id": "constant_08_users",
+      "status": "completed"
+    },
+    {
+      "trial_id": "constant_12_users",
+      "status": "completed"
+    },
+    {
+      "trial_id": "constant_16_users",
+      "status": "completed"
+    },
+    {
+      "trial_id": "ramp_up_08_users",
+      "status": "completed"
+    },
+    {
+      "trial_id": "ramp_up_12_users",
+      "status": "completed"
+    },
+    {
+      "trial_id": "ramp_up_16_users",
+      "status": "completed"
+    },
+    {
+      "trial_id": "spike_08_users",
+      "status": "completed"
+    },
+    {
+      "trial_id": "spike_12_users",
+      "status": "completed"
+    },
+    {
+      "trial_id": "spike_16_users",
+      "status": "completed"
+    },
+    {
+      "trial_id": "burst_08_users",
+      "status": "completed"
+    },
+    {
+      "trial_id": "burst_12_users",
+      "status": "completed"
+    },
+    {
+      "trial_id": "burst_16_users",
+      "status": "completed"
+    },
+    {
+      "trial_id": "ramp_down_08_users",
+      "status": "completed"
+    },
+    {
+      "trial_id": "ramp_down_12_users",
+      "status": "completed"
+    },
+    {
+      "trial_id": "ramp_down_16_users",
+      "status": "completed"
+    }
+  ]
+}

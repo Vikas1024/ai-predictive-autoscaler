@@ -1,0 +1,205 @@
+{
+  "dataset_version": "v4_multi_horizon",
+  "source_batch": "experiments/results/hpa_training/batch_20261123_141907",
+  "application_image": "predictive-autoscaler-app:v4",
+  "controller": "Kubernetes HPA",
+  "sampling_interval_seconds": 5.0,
+  "expected_samples_per_trial": 50,
+  "logical_trial_count": 15,
+  "accepted_trials": [
+    "burst_08_users",
+    "burst_12_users",
+    "burst_16_users",
+    "constant_08_users",
+    "constant_12_users",
+    "constant_16_users",
+    "ramp_down_08_users",
+    "ramp_down_12_users",
+    "ramp_down_16_users",
+    "ramp_up_08_users",
+    "ramp_up_12_users",
+    "ramp_up_16_users",
+    "spike_08_users",
+    "spike_12_users",
+    "spike_16_users"
+  ],
+  "ignored_incomplete_attempts": [
+    {
+      "directory": "experiments/results/hpa_training/batch_20261123_141907/ramp_up_12_users",
+      "trial_id": "ramp_up_12_users",
+      "attempt": 1,
+      "status": "running",
+      "reason": "not_completed"
+    }
+  ],
+  "train_trials": [
+    "burst_12_users",
+    "burst_16_users",
+    "constant_08_users",
+    "constant_16_users",
+    "ramp_down_08_users",
+    "ramp_down_12_users",
+    "ramp_up_08_users",
+    "ramp_up_12_users",
+    "ramp_up_16_users",
+    "spike_12_users",
+    "spike_16_users"
+  ],
+  "test_trials": [
+    "burst_08_users",
+    "constant_12_users",
+    "ramp_down_16_users",
+    "spike_08_users"
+  ],
+  "split_strategy": "Fixed trial-level holdout: 11 train trials, 4 test trials. No trial is shared between partitions.",
+  "test_split_limitation": "Four held-out trials cover four of five workload profiles; interpret test metrics cautiously.",
+  "feature_count": 13,
+  "features": [
+    "app_cpu_millicores",
+    "app_memory_mib",
+    "work_rps",
+    "work_avg_latency_ms",
+    "work_p95_latency_ms",
+    "ready_replicas",
+    "workload_active",
+    "cpu_lag_1",
+    "cpu_lag_2",
+    "cpu_lag_3",
+    "rps_lag_1",
+    "rps_lag_2",
+    "rps_lag_3"
+  ],
+  "missing_data_policy": {
+    "raw_data_modified": false,
+    "imputation": "None",
+    "zero_filled_missing_telemetry": false,
+    "sample_rule": "Exclude rows with missing current RPS/latency, any of three historical RPS lag values, or future CPU target.",
+    "workload_active": "Derived only from observed current RPS; missing RPS is not treated as inactive.",
+    "audit_files": [
+      "trial_quality.csv",
+      "horizon_sample_audit.csv"
+    ]
+  },
+  "horizons": {
+    "15s": {
+      "prediction_horizon_seconds": 15,
+      "target_column": "target_cpu_15s",
+      "shift_steps": 3,
+      "total_rows": 623,
+      "train_rows": 467,
+      "test_rows": 156,
+      "train_trials": [
+        "burst_12_users",
+        "burst_16_users",
+        "constant_08_users",
+        "constant_16_users",
+        "ramp_down_08_users",
+        "ramp_down_12_users",
+        "ramp_up_08_users",
+        "ramp_up_12_users",
+        "ramp_up_16_users",
+        "spike_12_users",
+        "spike_16_users"
+      ],
+      "test_trials": [
+        "burst_08_users",
+        "constant_12_users",
+        "ramp_down_16_users",
+        "spike_08_users"
+      ],
+      "train_file": "datasets/processed/multi_horizon_v4/cpu_prediction_15s_train.csv",
+      "test_file": "datasets/processed/multi_horizon_v4/cpu_prediction_15s_test.csv",
+      "all_file": "datasets/processed/multi_horizon_v4/cpu_prediction_15s_all.csv"
+    },
+    "30s": {
+      "prediction_horizon_seconds": 30,
+      "target_column": "target_cpu_30s",
+      "shift_steps": 6,
+      "total_rows": 587,
+      "train_rows": 439,
+      "test_rows": 148,
+      "train_trials": [
+        "burst_12_users",
+        "burst_16_users",
+        "constant_08_users",
+        "constant_16_users",
+        "ramp_down_08_users",
+        "ramp_down_12_users",
+        "ramp_up_08_users",
+        "ramp_up_12_users",
+        "ramp_up_16_users",
+        "spike_12_users",
+        "spike_16_users"
+      ],
+      "test_trials": [
+        "burst_08_users",
+        "constant_12_users",
+        "ramp_down_16_users",
+        "spike_08_users"
+      ],
+      "train_file": "datasets/processed/multi_horizon_v4/cpu_prediction_30s_train.csv",
+      "test_file": "datasets/processed/multi_horizon_v4/cpu_prediction_30s_test.csv",
+      "all_file": "datasets/processed/multi_horizon_v4/cpu_prediction_30s_all.csv"
+    },
+    "45s": {
+      "prediction_horizon_seconds": 45,
+      "target_column": "target_cpu_45s",
+      "shift_steps": 9,
+      "total_rows": 552,
+      "train_rows": 410,
+      "test_rows": 142,
+      "train_trials": [
+        "burst_12_users",
+        "burst_16_users",
+        "constant_08_users",
+        "constant_16_users",
+        "ramp_down_08_users",
+        "ramp_down_12_users",
+        "ramp_up_08_users",
+        "ramp_up_12_users",
+        "ramp_up_16_users",
+        "spike_12_users",
+        "spike_16_users"
+      ],
+      "test_trials": [
+        "burst_08_users",
+        "constant_12_users",
+        "ramp_down_16_users",
+        "spike_08_users"
+      ],
+      "train_file": "datasets/processed/multi_horizon_v4/cpu_prediction_45s_train.csv",
+      "test_file": "datasets/processed/multi_horizon_v4/cpu_prediction_45s_test.csv",
+      "all_file": "datasets/processed/multi_horizon_v4/cpu_prediction_45s_all.csv"
+    },
+    "60s": {
+      "prediction_horizon_seconds": 60,
+      "target_column": "target_cpu_60s",
+      "shift_steps": 12,
+      "total_rows": 516,
+      "train_rows": 381,
+      "test_rows": 135,
+      "train_trials": [
+        "burst_12_users",
+        "burst_16_users",
+        "constant_08_users",
+        "constant_16_users",
+        "ramp_down_08_users",
+        "ramp_down_12_users",
+        "ramp_up_08_users",
+        "ramp_up_12_users",
+        "ramp_up_16_users",
+        "spike_12_users",
+        "spike_16_users"
+      ],
+      "test_trials": [
+        "burst_08_users",
+        "constant_12_users",
+        "ramp_down_16_users",
+        "spike_08_users"
+      ],
+      "train_file": "datasets/processed/multi_horizon_v4/cpu_prediction_60s_train.csv",
+      "test_file": "datasets/processed/multi_horizon_v4/cpu_prediction_60s_test.csv",
+      "all_file": "datasets/processed/multi_horizon_v4/cpu_prediction_60s_all.csv"
+    }
+  }
+}

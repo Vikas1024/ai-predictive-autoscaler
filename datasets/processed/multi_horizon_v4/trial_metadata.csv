@@ -1,0 +1,16 @@
+trial_id,profile,max_users,selected_attempt,source_directory,status,requests,locust_failures,locust_average_response_ms,locust_p95_response_ms,locust_requests_per_second,metrics_samples,successful_metrics_samples
+burst_08_users,burst,8,1,experiments/results/hpa_training/batch_20261123_141907/burst_08_users,completed,1054.0,0.0,49.06485087665549,160.0,4.383525690459054,50,50
+burst_12_users,burst,12,1,experiments/results/hpa_training/batch_20261123_141907/burst_12_users,completed,1546.0,0.0,62.82042507567379,220.0,6.452709496216399,50,50
+burst_16_users,burst,16,1,experiments/results/hpa_training/batch_20261123_141907/burst_16_users,completed,1940.0,0.0,131.66207403093682,760.0,8.074877899044198,50,50
+constant_08_users,constant,8,1,experiments/results/hpa_training/batch_20261123_141907/constant_08_users,completed,1669.0,0.0,66.62653013958771,230.0,6.9605430856647565,50,50
+constant_12_users,constant,12,1,experiments/results/hpa_training/batch_20261123_141907/constant_12_users,completed,2160.0,0.0,237.26481804998835,790.0,8.991929717009851,50,50
+constant_16_users,constant,16,1,experiments/results/hpa_training/batch_20261123_141907/constant_16_users,completed,2170.0,0.0,632.0731016299669,1400.0,9.027103885228202,50,50
+ramp_down_08_users,ramp_down,8,1,experiments/results/hpa_training/batch_20261123_141907/ramp_down_08_users,completed,1117.0,0.0,57.09891094183383,190.0,4.663664692265053,50,50
+ramp_down_12_users,ramp_down,12,1,experiments/results/hpa_training/batch_20261123_141907/ramp_down_12_users,completed,1684.0,0.0,61.363715209617084,200.0,7.015046129780943,50,50
+ramp_down_16_users,ramp_down,16,1,experiments/results/hpa_training/batch_20261123_141907/ramp_down_16_users,completed,1984.0,0.0,190.64247310988296,750.0,8.264292102791806,50,50
+ramp_up_08_users,ramp_up,8,1,experiments/results/hpa_training/batch_20261123_141907/ramp_up_08_users,completed,1162.0,0.0,54.81892456542379,200.0,4.838512089879263,50,50
+ramp_up_12_users,ramp_up,12,2,experiments/results/hpa_training/batch_20261123_141907/ramp_up_12_users_retry_01,completed,1519.0,0.0,177.90218634825715,530.0,6.330901525938637,50,50
+ramp_up_16_users,ramp_up,16,1,experiments/results/hpa_training/batch_20261123_141907/ramp_up_16_users,completed,1844.0,0.0,273.6937571583505,850.0,7.687464137041544,50,50
+spike_08_users,spike,8,1,experiments/results/hpa_training/batch_20261123_141907/spike_08_users,completed,673.0,0.0,55.53304200149569,210.0,2.803671277570938,50,50
+spike_12_users,spike,12,1,experiments/results/hpa_training/batch_20261123_141907/spike_12_users,completed,968.0,0.0,92.6184214576454,400.0,4.04085225571569,50,50
+spike_16_users,spike,16,1,experiments/results/hpa_training/batch_20261123_141907/spike_16_users,completed,1165.0,0.0,218.21553003348527,1100.0,4.853215836815348,50,50

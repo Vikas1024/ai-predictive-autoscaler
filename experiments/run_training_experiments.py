@@ -367,7 +367,7 @@ def run_trial(
         "collector_interval_seconds": COLLECTOR_INTERVAL,
         "prediction_horizon_seconds": 30,
         "controller": "Kubernetes HPA",
-        "application_image": "predictive-autoscaler-app:v3",
+        "application_image": "predictive-autoscaler-app:v4",
         "gunicorn_workers": 2,
         "gunicorn_threads": 4,
         "application_url": app_url,
@@ -717,7 +717,7 @@ def main():
             "profiles": PROFILES,
             "user_levels": USER_LEVELS,
             "controller": "Kubernetes HPA",
-            "application_image": "predictive-autoscaler-app:v3",
+            "application_image": "predictive-autoscaler-app:v4",
             "status": "running",
         }
 

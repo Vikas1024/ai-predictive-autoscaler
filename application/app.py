@@ -1,25 +1,30 @@
 from flask import Flask, jsonify, Response, request
-from prometheus_client import Counter, Histogram, generate_latest, CONTENT_TYPE_LATEST
-import time
+from prometheus_client import (
+    CollectorRegistry,
+    Counter,
+    Histogram,
+    CONTENT_TYPE_LATEST,
+    generate_latest,
+    multiprocess,
+)
+import os
 import socket
+import time
 
 app = Flask(__name__)
 
-# Total HTTP requests, classified by method, endpoint and status
 HTTP_REQUESTS = Counter(
     "http_requests_total",
     "Total HTTP requests",
     ["method", "endpoint", "status"]
 )
 
-# HTTP response latency in seconds
 HTTP_REQUEST_DURATION = Histogram(
     "http_request_duration_seconds",
     "HTTP request processing duration",
     ["method", "endpoint"]
 )
 
-# CPU workload execution duration
 WORKLOAD_DURATION = Histogram(
     "cpu_workload_duration_seconds",
     "CPU-intensive workload execution duration"
@@ -34,19 +39,17 @@ def start_timer():
 @app.after_request
 def record_metrics(response):
     endpoint = request.endpoint or "unknown"
-    method = request.method
-    status = str(response.status_code)
 
     HTTP_REQUESTS.labels(
-        method=method,
+        method=request.method,
         endpoint=endpoint,
-        status=status
+        status=str(response.status_code)
     ).inc()
 
     duration = time.time() - getattr(request, "start_time", time.time())
 
     HTTP_REQUEST_DURATION.labels(
-        method=method,
+        method=request.method,
         endpoint=endpoint
     ).observe(duration)
 
@@ -89,8 +92,16 @@ def work():
 
 @app.route("/metrics")
 def metrics():
+    if os.environ.get("PROMETHEUS_MULTIPROC_DIR"):
+        registry = CollectorRegistry()
+        multiprocess.MultiProcessCollector(registry)
+        metrics_data = generate_latest(registry)
+    else:
+        # Supports local single-process development.
+        metrics_data = generate_latest()
+
     return Response(
-        generate_latest(),
+        metrics_data,
         mimetype=CONTENT_TYPE_LATEST
     )
 

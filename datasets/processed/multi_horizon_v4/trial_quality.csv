@@ -1,0 +1,16 @@
+trial_id,profile,max_users,source_rows,missing_work_rps,missing_work_avg_latency_ms,missing_work_p95_latency_ms,missing_app_cpu_millicores,missing_app_memory_mib,source_attempt,source_directory
+burst_08_users,burst,8,50,0,2,2,0,0,1,experiments/results/hpa_training/batch_20261123_141907/burst_08_users
+burst_12_users,burst,12,50,0,2,2,0,0,1,experiments/results/hpa_training/batch_20261123_141907/burst_12_users
+burst_16_users,burst,16,50,0,2,2,0,0,1,experiments/results/hpa_training/batch_20261123_141907/burst_16_users
+constant_08_users,constant,8,50,1,3,3,0,0,1,experiments/results/hpa_training/batch_20261123_141907/constant_08_users
+constant_12_users,constant,12,50,3,5,5,0,0,1,experiments/results/hpa_training/batch_20261123_141907/constant_12_users
+constant_16_users,constant,16,50,4,6,6,0,0,1,experiments/results/hpa_training/batch_20261123_141907/constant_16_users
+ramp_down_08_users,ramp_down,8,50,0,1,1,0,0,1,experiments/results/hpa_training/batch_20261123_141907/ramp_down_08_users
+ramp_down_12_users,ramp_down,12,50,5,7,7,0,0,1,experiments/results/hpa_training/batch_20261123_141907/ramp_down_12_users
+ramp_down_16_users,ramp_down,16,50,17,19,19,0,0,1,experiments/results/hpa_training/batch_20261123_141907/ramp_down_16_users
+ramp_up_08_users,ramp_up,8,50,0,2,2,0,0,1,experiments/results/hpa_training/batch_20261123_141907/ramp_up_08_users
+ramp_up_12_users,ramp_up,12,50,3,3,3,0,0,2,experiments/results/hpa_training/batch_20261123_141907/ramp_up_12_users_retry_01
+ramp_up_16_users,ramp_up,16,50,0,2,2,0,0,1,experiments/results/hpa_training/batch_20261123_141907/ramp_up_16_users
+spike_08_users,spike,8,50,0,2,2,0,0,1,experiments/results/hpa_training/batch_20261123_141907/spike_08_users
+spike_12_users,spike,12,50,7,9,9,0,0,1,experiments/results/hpa_training/batch_20261123_141907/spike_12_users
+spike_16_users,spike,16,50,0,2,2,0,0,1,experiments/results/hpa_training/batch_20261123_141907/spike_16_users

@@ -1,0 +1,56 @@
+Output: /home/user/Downloads/vikas_workspace/ai-predictive-autoscaler/experiments/results/hpa_training/batch_20261123_141907/spike_16_users/metrics.csv
+Duration: 250s | Interval: 5s
+Starting metric collection...
+[   0.0s] CPU=2.0m | Memory=52.0MiB | Replicas=1/1 | RPS=0.0 | Status=success
+[   5.0s] CPU=2.0m | Memory=52.0MiB | Replicas=1/1 | RPS=0.0 | Status=success
+[  10.0s] CPU=2.0m | Memory=52.0MiB | Replicas=1/1 | RPS=0.19999999999999998 | Status=success
+[  15.0s] CPU=2.0m | Memory=52.0MiB | Replicas=1/1 | RPS=0.4727272727272727 | Status=success
+[  20.0s] CPU=2.0m | Memory=52.0MiB | Replicas=1/1 | RPS=0.7999999999999999 | Status=success
+[  25.0s] CPU=2.0m | Memory=52.0MiB | Replicas=1/1 | RPS=1.1272727272727272 | Status=success
+[  30.0s] CPU=2.0m | Memory=52.0MiB | Replicas=1/1 | RPS=1.4363636363636363 | Status=success
+[  35.0s] CPU=2.0m | Memory=52.0MiB | Replicas=1/1 | RPS=1.6727272727272726 | Status=success
+[  40.0s] CPU=2.0m | Memory=52.0MiB | Replicas=1/1 | RPS=1.9636363636363636 | Status=success
+[  45.0s] CPU=2.0m | Memory=52.0MiB | Replicas=1/1 | RPS=2.290909090909091 | Status=success
+[  50.0s] CPU=2.0m | Memory=52.0MiB | Replicas=1/1 | RPS=2.5818181818181816 | Status=success
+[  55.0s] CPU=2.0m | Memory=52.0MiB | Replicas=1/1 | RPS=2.8727272727272726 | Status=success
+[  60.0s] CPU=2.0m | Memory=52.0MiB | Replicas=1/1 | RPS=3.1636363636363636 | Status=success
+[  65.0s] CPU=2.0m | Memory=52.0MiB | Replicas=1/1 | RPS=3.2545454545454544 | Status=success
+[  70.0s] CPU=119.0m | Memory=52.0MiB | Replicas=1/1 | RPS=3.327272727272727 | Status=success
+[  75.0s] CPU=119.0m | Memory=52.0MiB | Replicas=1/2 | RPS=3.6363636363636362 | Status=success
+[  80.0s] CPU=119.0m | Memory=52.0MiB | Replicas=1/2 | RPS=4.163636363636363 | Status=success
+[  85.0s] CPU=119.0m | Memory=52.0MiB | Replicas=1/2 | RPS=4.654545454545454 | Status=success
+[  90.0s] CPU=119.0m | Memory=52.0MiB | Replicas=2/2 | RPS=5.1454545454545455 | Status=success
+[  95.0s] CPU=119.0m | Memory=52.0MiB | Replicas=2/2 | RPS=5.581818181818181 | Status=success
+[ 100.0s] CPU=119.0m | Memory=52.0MiB | Replicas=2/2 | RPS=5.9818181818181815 | Status=success
+[ 105.0s] CPU=119.0m | Memory=52.0MiB | Replicas=2/2 | RPS=6.454545454545454 | Status=success
+[ 110.0s] CPU=119.0m | Memory=52.0MiB | Replicas=2/2 | RPS=6.334441 | Status=success
+[ 115.0s] CPU=119.0m | Memory=52.0MiB | Replicas=2/2 | RPS=6.107451481481481 | Status=success
+[ 120.0s] CPU=119.0m | Memory=52.0MiB | Replicas=2/2 | RPS=5.891202083333333 | Status=success
+[ 125.0s] CPU=119.0m | Memory=52.0MiB | Replicas=2/2 | RPS=7.127272727272727 | Status=success
+[ 130.0s] CPU=421.0m | Memory=99.0MiB | Replicas=2/2 | RPS=7.140000000000001 | Status=success
+[ 135.0s] CPU=421.0m | Memory=99.0MiB | Replicas=2/4 | RPS=6.005274074074074 | Status=success
+[ 140.0s] CPU=421.0m | Memory=99.0MiB | Replicas=2/4 | RPS=5.2704575 | Status=success
+[ 145.0s] CPU=421.0m | Memory=99.0MiB | Replicas=2/4 | RPS=5.309090909090909 | Status=success
+[ 150.0s] CPU=421.0m | Memory=99.0MiB | Replicas=4/4 | RPS=5.04 | Status=success
+[ 155.0s] CPU=421.0m | Memory=99.0MiB | Replicas=4/4 | RPS=4.71111111111111 | Status=success
+[ 160.0s] CPU=421.0m | Memory=99.0MiB | Replicas=4/4 | RPS=4.25 | Status=success
+[ 165.0s] CPU=421.0m | Memory=99.0MiB | Replicas=4/4 | RPS=3.3000000000000003 | Status=success
+[ 170.0s] CPU=421.0m | Memory=99.0MiB | Replicas=4/4 | RPS=3.333333333333333 | Status=success
+[ 175.0s] CPU=421.0m | Memory=99.0MiB | Replicas=4/4 | RPS=3.333333333333333 | Status=success
+[ 180.0s] CPU=421.0m | Memory=99.0MiB | Replicas=4/4 | RPS=3.2727272727272725 | Status=success
+[ 185.0s] CPU=421.0m | Memory=99.0MiB | Replicas=4/4 | RPS=3.257142857142857 | Status=success
+[ 190.0s] CPU=147.0m | Memory=196.0MiB | Replicas=4/4 | RPS=3.257142857142857 | Status=success
+[ 195.0s] CPU=147.0m | Memory=196.0MiB | Replicas=4/4 | RPS=3.257142857142857 | Status=success
+[ 200.0s] CPU=147.0m | Memory=196.0MiB | Replicas=4/4 | RPS=3.218181818181818 | Status=success
+[ 205.0s] CPU=147.0m | Memory=196.0MiB | Replicas=4/4 | RPS=2.270698333333333 | Status=success
+[ 210.0s] CPU=147.0m | Memory=196.0MiB | Replicas=4/4 | RPS=2.529083333333334 | Status=success
+[ 215.0s] CPU=147.0m | Memory=196.0MiB | Replicas=4/4 | RPS=3.1 | Status=success
+[ 220.0s] CPU=147.0m | Memory=196.0MiB | Replicas=4/4 | RPS=3.16 | Status=success
+[ 225.0s] CPU=147.0m | Memory=196.0MiB | Replicas=4/4 | RPS=3.16 | Status=success
+[ 230.0s] CPU=147.0m | Memory=196.0MiB | Replicas=4/4 | RPS=3.3000000000000003 | Status=success
+[ 235.0s] CPU=147.0m | Memory=196.0MiB | Replicas=4/4 | RPS=3.3000000000000003 | Status=success
+[ 240.0s] CPU=147.0m | Memory=196.0MiB | Replicas=4/4 | RPS=2.405483333333333 | Status=success
+[ 245.0s] CPU=147.0m | Memory=196.0MiB | Replicas=4/4 | RPS=3.0 | Status=success
+
+Collection complete. Samples: 50
+Saved to: /home/user/Downloads/vikas_workspace/ai-predictive-autoscaler/experiments/results/hpa_training/batch_20261123_141907/spike_16_users/metrics.csv
